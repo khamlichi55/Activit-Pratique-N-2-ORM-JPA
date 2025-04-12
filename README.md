@@ -1,4 +1,4 @@
-# Activit-Pratique-N-2-ORM-JPA
+# Activité Pratique N°2 – ORM JPA
 Ce projet consiste à créer une application Spring Boot utilisant JPA pour gérer des produits.
 Il permet d’ajouter, consulter, chercher, modifier et supprimer des produits à l’aide d’une base de données H2.
 
