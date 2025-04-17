@@ -1,17 +1,37 @@
 # Activité Pratique N°2 – ORM JPA
-Ce projet consiste à créer une application Spring Boot utilisant JPA pour gérer des produits.
-Il permet d’ajouter, consulter, chercher, modifier et supprimer des produits à l’aide d’une base de données H2.
+#Mapping des Associations
 
-Les principales étapes sont :
+## Objectif
 
-Création d’un projet Spring avec les dépendances nécessaires
+Ce projet a pour but d’illustrer le **mapping des associations** entre les entités dans une application Spring Boot à l'aide de JPA (Java Persistence API).
 
-Définition de l’entité Product
+## Entités principales
 
-Configuration de la base de données
+- **Patient**
+- **Médecin**
+- **RendezVous**
 
-Création du repository
+## Associations modélisées
 
-Réalisation des opérations CRUD
+- 🔗 Un **Patient** peut avoir plusieurs **rendez-vous**  
+  (Relation : *OneToMany*)
 
-Projet réalisé dans le cadre d’un travail pratique sur l’ORM avec Spring Boot.
+- 🔗 Un **Médecin** peut avoir plusieurs **rendez-vous**  
+  (Relation : *OneToMany*)
+
+- 🔗 Un **RendezVous** est lié à un seul **Patient** et un seul **Médecin**  
+  (Relation : *ManyToOne*)
+
+## Fonctionnalités
+
+- Créer et consulter des **patients**
+- Créer et consulter des **médecins**
+- Planifier un **rendez-vous** entre un patient et un médecin
+- Lister tous les **rendez-vous**
+- Rechercher les rendez-vous d’un patient ou d’un médecin
+
+## Technologies utilisées
+
+- Spring Boot
+- Spring Data JPA
+- Base de données H2
